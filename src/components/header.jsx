@@ -3,7 +3,9 @@ import React from "react";
 export default function Header(){
     const style = {
         marginBottom: "0.5em",
-        textAlign:"center"
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center" 
     }
     
     return (
