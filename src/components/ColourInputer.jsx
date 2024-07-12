@@ -49,15 +49,17 @@ export default function ColourInputer() {
                 <input type="submit" value="Add" onClick={validation} />
             </form>
 
+            <ul>
             {colourList.map(item =>
-                <ColourBlock
-                    key={item.id} // Can't be accessed in code but used by VDOM
-                    id={item.id} // Can be accessed in code
-                    colour={item.hexColour}
+                    <li><ColourBlock
+                        key={item.id} // Can't be accessed in code but used by VDOM
+                        id={item.id} // Can be accessed in code
+                        colour={item.hexColour}
 
-                    // Delete function passed into component
-                    remove={removeFromList}
-                />)}
+                        // Delete function passed into component
+                        remove={removeFromList}
+                    /></li>)}
+            </ul>
         </>
     )
 }
