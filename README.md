@@ -9,7 +9,7 @@ Updating arrays in state is a concept I had little practice in in React. Therefo
 
 ## 🛠️ Features
 - Regex used to validate input against rules
-    - Is a length of 6 
+    - Is a length of 3 or 6
     - Contains the accepted characters (0-9, a-f, A-F)
 - Able to add a colour to the list
 - Able to delete any colour in any place in the list
@@ -20,6 +20,7 @@ Updating arrays in state is a concept I had little practice in in React. Therefo
 ## 📚 Resources
 - Updating arrays in state (React Docs) - https://react.dev/learn/updating-arrays-in-state
 - Deleting an item from an array in react - https://dev.to/collegewap/how-to-delete-an-item-from-the-state-array-in-react-kl
+- Validating a hex value using Regex - https://gist.github.com/daxburatto/307e8365c41fd5401f9ac315676490bf
 
 ## ➕ Potential features to add
 - Updating the hex value of an item
