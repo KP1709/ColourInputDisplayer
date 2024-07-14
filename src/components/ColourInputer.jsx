@@ -20,8 +20,8 @@ export default function ColourInputer() {
 
     // Validate input before adding to list
     const validation = () => {
-        const regex = /[a-fA-F0-9]/; // Regex expression to validate string
-        if (enteredColour.length === 6 && enteredColour.match(regex)) return true
+        const regex = /^#?([a-f0-9]{6}|[a-f0-9]{3})$/; // Regex expression to validate string
+        if (enteredColour.match(regex)) return true
         else return false
     }
 
