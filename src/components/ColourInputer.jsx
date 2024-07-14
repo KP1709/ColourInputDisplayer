@@ -44,7 +44,7 @@ export default function ColourInputer() {
                     id="hexColour"
                     value={enteredColour}
                     onChange={(e) => setEnteredColour(e.target.value)}
-                    placeholder="00ff00"
+                    placeholder="00ff00 or 00f"
                 />
                 <input type="submit" value="Add" onClick={validation} />
             </form>
