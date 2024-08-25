@@ -23,7 +23,7 @@ describe('Main Page Tests', () => {
         cy.get('@colour-input').type('ff0000') // Testing lower case input
         cy.getDataTest('add-colour-button').click()
         cy.wait(500)
-        cy.get('@colour-input').type('00FF00')
+        cy.get('@colour-input').type('0F0') // Testing length of 3
         cy.getDataTest('add-colour-button').click()
 
         cy.getDataTest('colour-list').within(() =>{
